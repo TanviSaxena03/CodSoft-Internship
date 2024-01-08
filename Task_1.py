@@ -27,3 +27,31 @@ def show():
             n = n + 1
     else:
         print("\nNo task completed yet\n")
+        
+ch = 0
+while (ch != 5):
+    print("1) Add a new Task\n")
+    print("2) Delete a Task\n")
+    print("3) Mark a task as Completed\n")
+    print("4) Display the To-Do List\n")
+    print("5) Exit\n")
+    ch = input ("\n Enter your choice: ")
+    if (ch == '1'):
+        a = input("\nEnter Task: ")
+        insert(a)
+    elif (ch == '2'):
+        a = input("\nEnter Task: ")
+        delete(a)
+    elif (ch == '3'):
+        a = input("\nEnter Task: ")
+        completed(a)
+    elif (ch == '4'):
+        show()
+    else:
+        exit()
+        
+    
+    
+        
+        
+
