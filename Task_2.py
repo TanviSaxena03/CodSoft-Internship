@@ -21,6 +21,10 @@ while (ch != 5):
     print("5) Exit\n")
     
     ch = input ("Enter your choice: ")
+    
+    if (ch == '5'):
+        exit()
+        
     x = eval (input ("\nEnter 1st Number: "))
     y = eval (input ("\nEnter 2nd Number: "))
     
@@ -37,4 +41,4 @@ while (ch != 5):
         print(x," / ",y," = ",div(x,y))
         
     else:
-        exit()
+        print("\nInvalid choice\n")
